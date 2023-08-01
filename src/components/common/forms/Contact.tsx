@@ -20,7 +20,27 @@ const Contact = () => {
 
     }
     const validate = () => {
-
+        let isValid = true
+        if (!values.firstName.trim()) {
+            errors.firstName = "First name is required."
+            isValid = false
+        }
+        if (!values.lastName.trim()) {
+            errors.lastName = "Last name is required."
+            isValid = false
+        }
+        if (!values.email.trim()) {
+            errors.email = "Email address is required."
+            isValid = false
+        } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+            errors.email = "Invalid email address provided."
+            isValid = false
+        }
+        if (!values.message.trim()) {
+            errors.message = "Please let us know what your inquiry is."
+            isValid = false
+        }
+        return isValid
     }
     const handleSubmit = () => {
 
