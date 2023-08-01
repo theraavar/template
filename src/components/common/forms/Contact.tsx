@@ -19,9 +19,9 @@ const Contact = () => {
         message: ""
     })
     const [sent, isSent] = useState(false)
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const { name, value } = e.target
-        setValue((state) => ({ ...state, [name]: value }))
+
     }
     const validate = () => {
         let isValid = true
