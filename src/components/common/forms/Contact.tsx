@@ -1,4 +1,6 @@
 /* This is a simple 'Contact Us' form that sends the form data to an email service. */
+"use client"
+
 import styles from './Contact.module.css'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
@@ -45,15 +47,15 @@ const Contact = () => {
         return isValid
     }
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        const params = {
-            firstName: values.firstName,
-            lastName: values.lastName,
-            email: values.email,
-            message: values.message
-        }
         e.preventDefault()
         if (validate()) {
             if (!sent) {
+                const params = {
+                    firstName: values.firstName,
+                    lastName: values.lastName,
+                    email: values.email,
+                    message: values.message
+                }
                 const publicKey = process.env.EMAILJS_PUBLIC_KEY as string
                 const serviceID = process.env.EMAILJS_SERVICE_ID as string
                 const templateID = process.env.EMAILJS_TEMPLATE_ID as string
@@ -121,6 +123,14 @@ const Contact = () => {
                         value={values.message}
                         onChange={handleChange} />
                     {errors.message === "" ? "" : <span>{errors.message}</span>}
+                </div>
+                <button
+                    type="submit">
+                    Send
+                </button>
+
+                <div className={`${sent ? "" : ""}`}>
+                    <h3>Your message has been sent!</h3>
                 </div>
             </form>
         </div>
