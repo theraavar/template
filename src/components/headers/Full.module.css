@@ -1,6 +1,6 @@
 .header {
     align-items: center;
-    background-color: var(--background);
+    background-color: var(--background-dark);
     background-image: url('/background.jpg');
     background-position: center;
     background-repeat: no-repeat;

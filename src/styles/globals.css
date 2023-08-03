@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Most of the variables are used outside this file, so do not delete any of them. */
 :root {
     --alpha: #014463;
     --beta: #1D6A96;

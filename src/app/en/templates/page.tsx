@@ -1,15 +1,13 @@
 import Slideshow from '@/components/common/slideshows/Slideshow'
 import styles from './Page.module.css'
-import Card from '@/components/common/cards/Card'
-import Grid from '@/components/common/Grid'
+
 
 const Page = () => {
-    let values = ["/background.jpg", "/icon.png"]
     return (
-        <div className="min-h-screen h-full w-full bg-[color:var(--delta)] px-[5%]">
+        <div className="min-h-screen h-full w-full bg-[color:var(--alpha)] px-[5%]">
             <div className="h-full min-h-screen w-full flex flex-col items-center justify-center min-h-60">
-                <h3>Borders & Backgrounds</h3>
-                <div className="bg-[color:var(--delta)] h-full w-full flex flex-col items-center justify-center min-h-60">
+                <h3 className="text-[color:var(--text)]">Borders & Backgrounds</h3>
+                <div className="bg-[color:var(--delta)] h-full flex flex-col items-center justify-center min-h-60">
                     <div className="h-full w-full flex items-center justify-center min-h-60">
                         <span className={`${styles.base} bg-[color:var(--alpha)] border border-[color:var(--beta)]`}>Border 1</span>
                         <span className={`${styles.base} bg-[color:var(--alpha)] border-2 border-[color:var(--beta)]`}>Border 2</span>
