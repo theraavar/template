@@ -8,8 +8,6 @@ const Slideshow = ({ values }: any) => {
     const [current, setCurrent] = useState(0)
     const [paused, setPaused] = useState(false)
 
-    let translateAmount = current * -100
-
     /* This will update the index of our slideshow. */
     const updateIndex = (index: number) => {
         if (index < 0) {
