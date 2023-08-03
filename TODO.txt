@@ -4,6 +4,7 @@ Before production:
     Move all components around as much as possible to ensure no unintended overlap.
 
 TODO: Style the form component.
+TODO: Add responsive styles to the form component.
 TODO: Fix the form component not registering input correctly.
 TODO: Assign emailjs properly to the form component.
 
@@ -11,3 +12,11 @@ TODO: Create a modal not reliant on HeadlessUI (see link in Modal component file
 TODO: Style modal component.
 
 TODO: Setup our basic pages.
+
+TODO: Add some responsive on the height of the banner component.
+
+TODO: Consider some responsiveness on the slide component?
+
+TODO: Ensure Card component is responsive if used outside of the Grid component?
+
+TODO: Ensure BetterLink component is responsive.
