@@ -17,3 +17,227 @@
     --foreground: var(--beta);
     --text: var(--white);
 }
+
+body {
+    font-size: 16px;
+}
+
+div,
+button,
+input,
+textarea,
+a,
+p,
+span {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-size: 1.4rem;
+}
+
+/* We are using the Tailwind breakpoints to apply responsiveness across the app. By default, we need to set values based on a screen smaller than 640px. */
+@media screen and (min-width: 640px) {
+
+    div,
+    button,
+    input,
+    textarea,
+    a,
+    p,
+    span {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    h3 {
+        font-size: 2.1rem;
+    }
+
+    h4 {
+        font-size: 1.9rem;
+    }
+
+    h5 {
+        font-size: 1.7rem;
+    }
+
+    h6 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    div,
+    button,
+    input,
+    textarea,
+    a,
+    p,
+    span {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    h4 {
+        font-size: 2.0rem;
+    }
+
+    h5 {
+        font-size: 1.8rem;
+    }
+
+    h6 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    div,
+    button,
+    input,
+    textarea,
+    a,
+    p,
+    span {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+    }
+
+    h4 {
+        font-size: 2.1rem;
+    }
+
+    h5 {
+        font-size: 1.9rem;
+    }
+
+    h6 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    div,
+    button,
+    input,
+    textarea,
+    a,
+    p,
+    span {
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    h4 {
+        font-size: 2.2rem;
+    }
+
+    h5 {
+        font-size: 2.0rem;
+    }
+
+    h6 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+
+    div,
+    button,
+    input,
+    textarea,
+    a,
+    p,
+    span {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.9rem;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2.3rem;
+    }
+
+    h5 {
+        font-size: 2.1rem;
+    }
+
+    h6 {
+        font-size: 1.9rem;
+    }
+}

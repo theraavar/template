@@ -46,7 +46,7 @@ const Slideshow = ({ values }: any) => {
                     onClick={() => {
                         updateIndex(current - 1)
                     }}>
-                    &#8249
+                    &#8249;
                 </button>
             </div>
             {/* Dots */}
@@ -65,7 +65,7 @@ const Slideshow = ({ values }: any) => {
                     onClick={() => {
                         updateIndex(current + 1)
                     }}>
-                    &#8250
+                    &#8250;
                 </button>
             </div>
         </div>

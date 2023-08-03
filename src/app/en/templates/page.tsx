@@ -2,6 +2,7 @@ import Slideshow from '@/components/common/slideshows/Slideshow'
 import styles from './Page.module.css'
 
 const Page = () => {
+    let values = ["background.jpg", "icon.png"]
     return (
         <div className="min-h-screen h-full w-full bg-[color:var(--delta)]">
             <div className="h-full w-full flex flex-col items-center justify-center">
@@ -27,7 +28,15 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-            <Slideshow />
+            <Slideshow
+                values={values} />
+            <p>This is a paragraph element.</p>
+            <h6>This is a header 6 element.</h6>
+            <h5>This is a header 5 element.</h5>
+            <h4>This is a header 4 element.</h4>
+            <h3>This is a header 3 element.</h3>
+            <h2>This is a header 2 element.</h2>
+            <h1>This is a header 1 element.</h1>
         </div>
     )
 }
