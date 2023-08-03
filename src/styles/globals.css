@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 :root {
-    --alpha: ;
-    --beta: ;
-    --gamma: ;
-    --delta: ;
+    --alpha: #014463;
+    --beta: #1D6A96;
+    --gamma: #85B8CB;
+    --delta: #D1DDDB;
+
+    --black: #0F0F0F;
+    --white: #FAF9F6;
+
+    --background-dark: var(--alpha);
+    --background-light: var(--delta);
+    --border: var(--alpha);
+    --foreground: var(--beta);
+    --text: var(--white);
 }
