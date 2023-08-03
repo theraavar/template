@@ -1,0 +1,11 @@
+.vessel {
+    align-items: center;
+    background-color: var(--background-light);
+    color: var(--text);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    width: 100%;
+}
