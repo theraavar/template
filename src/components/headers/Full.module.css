@@ -1,0 +1,14 @@
+.header {
+    align-items: center;
+    background-color: var(--background);
+    background-image: url('/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}

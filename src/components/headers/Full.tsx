@@ -1,6 +1,8 @@
-const Full = ({ children }: Partial<IComponent>) => {
+import styles from './Full.module.css'
+
+const Full = ({ children }: { children: React.ReactNode }) => {
     return (
-        <header>
+        <header className={styles.header}>
             {children}
         </header>
     )
