@@ -1,0 +1,13 @@
+Before production: 
+
+    Check the metadata for each page; ensure it is correct.
+    Move all components around as much as possible to ensure no unintended overlap.
+
+TODO: Style the form component.
+TODO: Fix the form component not registering input correctly.
+TODO: Assign emailjs properly to the form component.
+
+TODO: Create a modal not reliant on HeadlessUI (see link in Modal component file).
+TODO: Style modal component.
+
+TODO: Setup our basic pages.
