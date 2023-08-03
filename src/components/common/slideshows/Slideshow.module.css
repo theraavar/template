@@ -11,10 +11,17 @@
     background-color: var(--foreground);
     border: 2px solid var(--border);
     border-radius: 16px;
-    height: 25vh;
+    flex-direction: column;
+    height: 24vh;
     margin-bottom: 10px;
     overflow: hidden;
     position: relative;
+    width: 100%;
+}
+
+.slides {
+    height: 100%;
+    white-space: nowrap;
     width: 100%;
 }
 
@@ -22,6 +29,7 @@
     border: none;
     border-radius: 8px;
     bottom: 8px;
+    padding-bottom: 1px;
     position: absolute;
 }
 
@@ -42,7 +50,8 @@
 .previous>button,
 .next>button {
     font-size: 1rem;
-    padding-bottom: 1px;
+    height: 100%;
+    width: 100%;
 }
 
 .previous>button {
@@ -75,7 +84,7 @@
 
 @media screen and (min-width: 640px) {
     .slideshow {
-        min-height: 30vh;
+        min-height: 32vh;
     }
 
     .previous,
@@ -93,7 +102,7 @@
 
 @media screen and (min-width: 768px) {
     .slideshow {
-        min-height: 35vh;
+        min-height: 40vh;
     }
 
     .previous,
@@ -111,7 +120,7 @@
 
 @media screen and (min-width: 1024px) {
     .slideshow {
-        min-height: 40vh;
+        min-height: 48vh;
     }
 
     .previous,
@@ -129,7 +138,7 @@
 
 @media screen and (min-width: 1280px) {
     .slideshow {
-        min-height: 45vh;
+        min-height: 54vh;
     }
 
     .previous,
@@ -147,7 +156,7 @@
 
 @media screen and (min-width: 1536px) {
     .slideshow {
-        min-height: 50vh;
+        min-height: 60vh;
     }
 
     .previous,

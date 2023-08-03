@@ -2,6 +2,7 @@
 
 import styles from './Slideshow.module.css'
 import { useEffect, useState } from 'react'
+import Slide from './slides/Slide'
 
 const Slideshow = ({ values }: any) => {
     const [current, setCurrent] = useState(0)
@@ -37,8 +38,15 @@ const Slideshow = ({ values }: any) => {
         <div className={styles.slideshow}
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}>
-            <div>
-                {/*This is where we put our slides. */}
+            <div className={styles.slides}
+                style={{ transform: `translateX(-${current * 100}%)`, transition: 'translate 0.3' }}>
+                {values.map((value: any, index: number) => {
+                    return (
+                        <Slide
+                            key={index}
+                            value={value} />
+                    )
+                })}
             </div>
             {/* Previous Button */}
             <div className={`${styles.wrapper} ${styles.previous} bg-black/70`}>

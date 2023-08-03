@@ -9,7 +9,7 @@ const Slide = ({ value }: any) => {
             height={1080}
             width={1920}
             quality={100}
-            style={{ height: "100%", width: "100%", objectFit: "fill" }} />
+            style={{ objectFit: "fill", height: "100%", width: "100%" }} />
     )
 }
 export default Slide
