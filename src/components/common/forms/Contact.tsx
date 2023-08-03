@@ -21,7 +21,8 @@ const Contact = () => {
     const [sent, isSent] = useState(false)
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-
+        const value = e.target.value
+        setValue({ ...values, [e.target.name]: value })
     }
     const validate = () => {
         let isValid = true
@@ -48,6 +49,7 @@ const Contact = () => {
     }
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
+        console.log(values)
         if (validate()) {
             if (!sent) {
                 const params = {
@@ -137,3 +139,5 @@ const Contact = () => {
     )
 }
 export default Contact
+
+/* Add CAPTCHA and honeypot https://www.rowy.io/blog/react-contact-form*/

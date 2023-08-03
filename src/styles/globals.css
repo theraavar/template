@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {}
-
-html {
-    color: black;
+:root {
+    --alpha: ;
+    --beta: ;
+    --gamma: ;
+    --delta: ;
 }
