@@ -1,5 +1,7 @@
 import Slideshow from '@/components/common/slideshows/Slideshow'
 import styles from './Page.module.css'
+import Card from '@/components/common/cards/Card'
+import Grid from '@/components/common/Grid'
 
 const Page = () => {
     let values = ["/background.jpg", "/icon.png"]
@@ -28,17 +30,42 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-            <Slideshow
-                values={values} />
-
+            <Grid>
+                <Card
+                    image='/background.jpg'
+                    link='/'>
+                    This is some text on our card! It is a lot of text, and it is responsive to the card hopefully!
+                </Card>
+                <Card
+                    image='/background.jpg'
+                    link='/'>
+                    This is some text on our card!
+                </Card>
+                <Card
+                    image='/background.jpg'
+                    link='/'>
+                    This is some text on our card!
+                </Card>
+                <Card
+                    image='/background.jpg'
+                    link='/'>
+                    This is some text on our card!
+                </Card>
+                <Card
+                    image='/background.jpg'
+                    link='/'>
+                    This is some text on our card!
+                </Card>
+                <Card
+                    image='/background.jpg'
+                    link='/'>
+                    This is some text on our card!
+                </Card>
+            </Grid>
         </div>
     )
 }
 export default Page
-
-/**
- * Client has stated that Column 3 / Row 2 is their preferred.
- */
 
 /* 
             <p>This is a paragraph element.</p>
