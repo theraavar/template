@@ -1,0 +1,9 @@
+.base {
+    align-items: center;
+    border-style: solid;
+    display: flex;
+    height: 52px;
+    justify-content: center;
+    margin: 4px;
+    width: 52px;
+}
