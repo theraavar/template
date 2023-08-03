@@ -5,24 +5,22 @@ import styles from './Contact.module.css'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
+
+const initialValues = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: ""
+}
 const Contact = () => {
-    const [values, setValue] = useState({
-        firstName: "",
-        lastName: "",
-        email: "",
-        message: ""
-    })
-    const [errors, setError] = useState({
-        firstName: "",
-        lastName: "",
-        email: "",
-        message: ""
-    })
+    const [values, setValue] = useState(initialValues)
+    const [errors, setError] = useState(initialValues)
     const [sent, isSent] = useState(false)
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = e.target.value
-        setValue({ ...values, [e.target.name]: value })
+        const { name, value } = e.target
+        setValue({ ...values, [name]: value })
+
     }
     const validate = () => {
         let isValid = true
@@ -49,7 +47,6 @@ const Contact = () => {
     }
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log(values)
         if (validate()) {
             if (!sent) {
                 const params = {
@@ -139,5 +136,3 @@ const Contact = () => {
     )
 }
 export default Contact
-
-/* Add CAPTCHA and honeypot https://www.rowy.io/blog/react-contact-form*/
