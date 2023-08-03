@@ -65,5 +65,6 @@ const Slideshow = ({ values }: any) => {
         </div>
     )
 }
+export default Slideshow
 
 //https://github.com/theraavar/hartman-vreit-xxi/blob/main/src/components/common/carousel/Carousel.jsx
