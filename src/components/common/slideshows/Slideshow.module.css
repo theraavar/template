@@ -1,17 +1,163 @@
-.slideshow {
+.slideshow,
+.wrapper {
     align-items: center;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.slideshow {
     background-color: var(--foreground);
     border: 2px solid var(--border);
-    border-radius: 8px;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    max-height: 100vh;
+    border-radius: 16px;
+    height: 25vh;
+    margin-bottom: 10px;
     overflow: hidden;
     position: relative;
-    text-align: center;
     width: 100%;
 }
 
+.wrapper {
+    border: none;
+    border-radius: 8px;
+    bottom: 4px;
+    position: absolute;
+}
 
-/* Responsive Styles */
+.previous,
+.next {
+    min-height: 20px;
+    min-width: 24px;
+}
+
+.previous {
+    left: 1%;
+}
+
+.next {
+    right: 1%;
+}
+
+.previous>button,
+.next>button {
+    font-size: 1rem;
+    padding-bottom: 1px;
+}
+
+.previous>button {
+    padding-right: 1px;
+}
+
+.next>button {
+    padding-left: 1px;
+}
+
+.dots {
+    max-width: 80%;
+}
+
+.dot {
+    background-color: rgb(97, 97, 97);
+    border: none;
+    border-radius: 50%;
+    height: 8px;
+    margin: 3px;
+    width: 8px;
+}
+
+.current {
+    background-color: var(--white);
+}
+
+
+
+@media screen and (min-width: 640px) {
+    .slideshow {
+        min-height: 30vh;
+    }
+
+    .previous,
+    .next {
+        min-height: 22px;
+        min-width: 26px;
+    }
+
+    .dot {
+        height: 10px;
+        margin: 4px;
+        width: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .slideshow {
+        min-height: 35vh;
+    }
+
+    .previous,
+    .next {
+        min-height: 24px;
+        min-width: 28px;
+    }
+
+    .dot {
+        height: 12px;
+        margin: 4px;
+        width: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slideshow {
+        min-height: 40vh;
+    }
+
+    .previous,
+    .next {
+        min-height: 26px;
+        min-width: 30px;
+    }
+
+    .dot {
+        height: 14px;
+        margin: 5px;
+        width: 14px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .slideshow {
+        min-height: 45vh;
+    }
+
+    .previous,
+    .next {
+        min-height: 28px;
+        min-width: 32px;
+    }
+
+    .dot {
+        height: 16px;
+        margin: 5px;
+        width: 16px;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .slideshow {
+        min-height: 50vh;
+    }
+
+    .previous,
+    .next {
+        min-height: 30px;
+        min-width: 34px;
+    }
+
+    .dot {
+        height: 18px;
+        margin: 6px;
+        width: 18px;
+    }
+}

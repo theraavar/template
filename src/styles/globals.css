@@ -57,6 +57,19 @@ h6 {
 }
 
 /* We are using the Tailwind breakpoints to apply responsiveness across the app. By default, we need to set values based on a screen smaller than 640px. */
+/*
+
+@media screen and (min-width: 640px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1280px) {}
+
+@media screen and (min-width: 1536px) {}
+
+*/
 @media screen and (min-width: 640px) {
 
     div,

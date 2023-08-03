@@ -41,7 +41,7 @@ const Slideshow = ({ values }: any) => {
                 {/*This is where we put our slides. */}
             </div>
             {/* Previous Button */}
-            <div>
+            <div className={`${styles.wrapper} ${styles.previous} bg-black/70`}>
                 <button
                     onClick={() => {
                         updateIndex(current - 1)
@@ -50,17 +50,17 @@ const Slideshow = ({ values }: any) => {
                 </button>
             </div>
             {/* Dots */}
-            <div>
-                {values.map((value: any, index: any) => {
+            <div className={`${styles.wrapper} ${styles.dots}  bg-black/70`}>
+                {values.map((index: number) => {
                     return (
-                        <button className={`${index = current ? styles.current : styles.dot}`}
+                        <button className={`${index === current ? styles.current : ""} ${styles.dot}`}
                             key={index}
                             onClick={() => setCurrent(index)} />
                     )
                 })}
             </div>
             {/* Next Button */}
-            <div>
+            <div className={`${styles.wrapper} ${styles.next}  bg-black/70`}>
                 <button
                     onClick={() => {
                         updateIndex(current + 1)
