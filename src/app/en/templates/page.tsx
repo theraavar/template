@@ -30,38 +30,6 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-            <Grid>
-                <Card
-                    image='/background.jpg'
-                    link='/'>
-                    This is some text on our card! It is a lot of text, and it is responsive to the card hopefully!
-                </Card>
-                <Card
-                    image='/background.jpg'
-                    link='/'>
-                    This is some text on our card!
-                </Card>
-                <Card
-                    image='/background.jpg'
-                    link='/'>
-                    This is some text on our card!
-                </Card>
-                <Card
-                    image='/background.jpg'
-                    link='/'>
-                    This is some text on our card!
-                </Card>
-                <Card
-                    image='/background.jpg'
-                    link='/'>
-                    This is some text on our card!
-                </Card>
-                <Card
-                    image='/background.jpg'
-                    link='/'>
-                    This is some text on our card!
-                </Card>
-            </Grid>
         </div>
     )
 }
