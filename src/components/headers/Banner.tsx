@@ -1,8 +1,9 @@
 import styles from './Banner.module.css'
 
-const Banner = ({ children }: { children: React.ReactNode }) => {
+const Banner = ({ children, title }: Partial<IComponent>) => {
     return (
         <header className={styles.header}>
+            {title}
             {children}
         </header>
     )

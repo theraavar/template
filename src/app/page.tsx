@@ -1,7 +1,13 @@
+import Vessel from "@/components/common/Vessel"
+import Full from "@/components/headers/Full"
+
 const Page = () => {
   return (
-    <div>
-    </div>
+    <Vessel>
+      <Full>
+
+      </Full>
+    </Vessel>
   )
 }
 export default Page
