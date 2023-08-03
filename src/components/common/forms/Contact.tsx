@@ -69,6 +69,14 @@ const Contact = () => {
         }
     }
 
+    if (sent) {
+        return (
+            <div>
+                <h3>Your message has been sent!</h3>
+            </div>
+        )
+    }
+
     const title = "Contact Us"
     const placeholder = "Please let us know your inquiry."
     return (
@@ -127,10 +135,6 @@ const Contact = () => {
                     type="submit">
                     Send
                 </button>
-
-                <div className={`${sent ? "" : ""}`}>
-                    <h3>Your message has been sent!</h3>
-                </div>
             </form>
         </div>
     )
