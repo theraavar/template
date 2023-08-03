@@ -51,7 +51,13 @@ const Slideshow = ({ values }: any) => {
             </div>
             {/* Dots */}
             <div>
-
+                {values.map((value: any, index: any) => {
+                    return (
+                        <button className={`${index = current ? styles.current : styles.dot}`}
+                            key={index}
+                            onClick={() => setCurrent(index)} />
+                    )
+                })}
             </div>
             {/* Next Button */}
             <div>

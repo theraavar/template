@@ -1,3 +1,4 @@
+import Slideshow from '@/components/common/slideshows/Slideshow'
 import styles from './Page.module.css'
 
 const Page = () => {
@@ -26,6 +27,7 @@ const Page = () => {
                     </div>
                 </div>
             </div>
+            <Slideshow />
         </div>
     )
 }
