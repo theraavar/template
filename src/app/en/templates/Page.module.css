@@ -7,3 +7,7 @@
     margin: 4px;
     width: 116px;
 }
+
+.text_white {
+    color: var(--white);
+}
