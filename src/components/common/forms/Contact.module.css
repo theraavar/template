@@ -23,10 +23,21 @@
     padding-left: 4px;
 }
 
-.div:hover>.label,
-.input:focus {
+.div:hover>.label {
     font-size: 1rem;
-    top: 0px
+    top: 0px;
+}
+
+.div:hover>.input::placeholder {
+    color: var(--alpha);
+}
+
+.input::placeholder {
+    color: transparent;
+}
+
+.input:focus::placeholder {
+    color: var(--alpha);
 }
 
 .div:hover>.input {}

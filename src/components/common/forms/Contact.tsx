@@ -13,7 +13,8 @@ const Contact = () => {
                 <label className={styles.label}>
                     Label
                 </label>
-                <input className={styles.input} />
+                <input className={styles.input}
+                    placeholder='Placeholder' />
             </div>
         </form>
     )
